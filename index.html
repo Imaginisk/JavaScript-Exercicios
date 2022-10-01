@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Get Text Input Field Value in JavaScript</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- Calculo de Hipotenusa -->
+    <div class="conta">
+      <label for="">Digite o primeiro valor</label>
+      <input type="text" placeholder="Type something..." id="myInput" />
+      <label for="">Digite o segundo valor</label>
+      <input type="text" placeholder="Type something..." id="myInput2" />
+      <button type="button" onclick="getInputValue();">Get Value</button>
+    </div>
+    <!-- Contador -->
+    <div class="contador">
+      <h1 id="number">0</h1>
+      <button style="margin-left: 10px" onclick="decresc()">Decrease</button>
+      <button onclick="reset()">Reset</button>
+      <button onclick="acresc()">Increase</button>
+    </div>
+    <!-- Rolador de dados Rpg -->
+    <div class="dados">
+      <ul>
+        <li id="dado">d4</li>
+        <li id="dado">d6</li>
+        <li id="dado">d8</li>
+        <li id="dado">d10</li>
+        <li id="dado">d12</li>
+        <li id="dado">d20</li>
+        <li id="dado">d100</li>
+      </ul>
+      <label for="" class="resulRolagem" id="resulRolagem">0</label>
+      <button>Rolar</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
