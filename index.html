@@ -17,9 +17,11 @@
     <!-- Contador -->
     <div class="contador">
       <h1 id="number">0</h1>
-      <button style="margin-left: 10px" onclick="decresc()">Decrease</button>
-      <button onclick="reset()">Reset</button>
-      <button onclick="acresc()">Increase</button>
+      <div class="buttons">
+        <button style="margin-left: 10px" onclick="decresc()">Decrease</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="acresc()">Increase</button>
+      </div>
     </div>
     <!-- Rolador de dados Rpg -->
     <div class="dados">
@@ -34,6 +36,29 @@
       </ul>
       <label for="" class="resulRolagem" id="resulRolagem">0</label>
       <button>Rolar</button>
+    </div>
+    <div class="adivinhacao">
+      <h1>Jogo de Adivinhação</h1>
+      <p>Escolha um número entre 1 e 10</p>
+      <p>Escolha um número:</p>
+      <input id="numeroEscolhido" type="text" />
+      <button id="submitButton">Adivinhar</button>
+    </div>
+
+    <!-- Conversor de temperatura -->
+    <div class="temp">
+      <label for="">Adicione uma temperatura</label>
+      <input type="text" id="textBox" /><br />
+
+      <label for="">convert to:</label><br />
+      <input type="radio" id="cButton" name="unit" />
+      <label for="">Celsius</label><br />
+
+      <input type="radio" id="fButton" name="unit" />
+      <label for="">Fahrenheit</label><br />
+
+      <button id="submit">submit</button>
+      <label for="" id="tempLabel"></label>
     </div>
     <script src="script.js"></script>
   </body>
